@@ -1,7 +1,7 @@
 Summary:	A lightweight PyGTK menu
 Name:		snapfly
 Version:	0.8
-Release:	1
+Release:	2
 License:	GPLv3
 Group:		Graphical desktop/Other
 Url:		https://github.com/drakmail/snapfly
