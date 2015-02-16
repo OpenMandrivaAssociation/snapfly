@@ -8,6 +8,7 @@ Url:		https://github.com/drakmail/snapfly
 # from git
 Source0:	%{name}-%{version}.tar.bz2
 BuildRequires:	python-setuptools
+BuildRequires:	python-devel
 BuildArch:	noarch
 Requires:	pygtk2
 Requires:	python-cairo
@@ -22,6 +23,7 @@ patchset for adeskmenu, but nowadays SnapFly is almost fully rewritten.
 
 %prep
 %setup -q
+find . -name "*.py" |xargs 2to3 -w
 
 %build
 python setup.py build
